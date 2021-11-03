@@ -1,0 +1,168 @@
+<%page expression_filter="h"/>
+<%! 
+	from django.utils.translation import ugettext as _ 
+	from django.core.urlresolvers import reverse
+%>
+<%inherit file="../main.html" />
+##<%block name="pagetitle">${_("Terms of Service")}</%block>
+<%block name="pagetitle">Aviso de privacidad</%block>
+<style>
+    .subtitulo{
+        color: #073763;
+		font-weight: bold;
+		font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif!important;
+    }
+    .titulo{
+        color: #073763 !important;
+		font-weight: bold;
+    }
+	.negrita{
+		color: #000000;
+	}
+</style>
+<main id="main" aria-label="Content" tabindex="-1" style="line-height:2; text-align: justify;">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("Terms of Service")}</%block>
+			##<%block name="pageheader"><span class="titulo">Aviso de privacidad</span></%block>
+        </h1>
+        <p>
+            ##<%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
+			<%block name="pagecontent">
+				<h3 class="subtitulo">NORMAS DE LA CONDUCTA EN LÍNEA</h3>
+				<p>
+					Usted acepta que es responsable de su propio uso de la plataforma, así como de sus publicaciones de usuario. Las
+					“Publicaciones de usuario” se refieren a todo el contenido enviado, publicado o distribuido en la plataforma por usted u
+					otros usuarios del sitio, incluso, pero sin limitarse a ello, publicaciones en foros, ediciones en la wiki, notas,
+					preguntas, comentarios, vídeos y carga de archivos. Usted acepta que utilizará el sitio de conformidad con estos
+					Acuerdos y todas las leyes, normas y reglamentaciones locales, estatales, nacionales e internacionales pertinentes en
+					relación con la transmisión de datos técnicos exportados desde su país de residencia y todas las leyes de control de
+					exportaciones de México.
+				</p>
+				<p>
+					Como condición para el uso de este sitio, no lo utilizará con la intención de dañar, deshabilitar, sobrecargar o
+					deteriorar nuestros servidores o las redes conectadas, ni interferirá con el uso y disfrute del sitio de cualquier otra
+					parte. No puede intentar obtener acceso no autorizado donde actualmente no tiene acceso, a otras cuentas, sistemas
+					informáticos o redes conectadas a nuestros servidores, mediante piratería, extracción de contraseñas o cualquier otro
+					medio. No puede obtener ni intentar obtener materiales o información almacenada en este sitio, sus servidores o
+					computadoras asociadas a través de un medio que no se ponga intencionalmente a su disposición. Si es un usuario
+					registrado, no compartirá su contraseña ni permitirá que un tercero acceda a su cuenta o la comprometa.
+				</p>
+				<p>
+					Además, usted se compromete a no abusar, o de otro modo realizar descargas masivas, de contenido de este sitio,
+					incluyendo, entre otros, una lista o un directorio de los usuarios del sistema, Publicaciones de usuario o información
+					del usuario, libros de texto en línea, materiales del curso o marcas comerciales y logotipos. Usted acepta no falsificar
+					o intentar falsificar su identidad mientras usa este sitio.
+				</p>
+				<br>
+				<h3 class="subtitulo">ELEMENTOS ESTRICTAMENTE PROHIBIDOS</h3>
+				<p>
+					LOS SIGUIENTES ELEMENTOS QUEDAN ESTRICTAMENTE PROHIBIDOS EN ESTE SITIO:
+					<ul>
+						<li> Contenido que difame, acose o amenace a otros;</li>
+						<li> Contenido que discuta actividades ilegales con la intención de cometerlas;</li>
+						<li> Contenido que infrinja la propiedad intelectual de otra persona, como, por ejemplo, derechos de autor o marcas
+							comerciales;</li>
+						<li> Contenido profano, pornográfico, obsceno, indecente o ilegal;</li>
+						<li> Publicidad o cualquier otra forma de solicitud comercial;</li>
+						<li> Contenido relacionado con actividades políticas partidistas;</li>
+						<li> Virus, troyanos, gusanos, bombas de tiempo, archivos corruptos, malware, spyware o cualquier otro software
+							similar
+							que puedan dañar el funcionamiento de la computadora o la propiedad de otro; y</li>
+						<li> Contenido que tenga información inexacta intencionalmente o que se publique con la intención de engañar a otros
+							(en
+							conjunto, se denominan “Elementos estrictamente prohibidos”).</li>
+					</ul>
+					No puede enviar, publicar, compartir ni distribuir de ninguna otra manera ninguno de los Elementos estrictamente
+					prohibidos mencionados en este sitio o a través del mismo.
+				</p>
+				<br>
+				<h3 class="subtitulo">CUENTAS DE USUARIO</h3>
+				<p>
+					Para crear una cuenta de usuario, debe proporcionar su nombre completo, una dirección de correo electrónico, su país o
+					región de residencia, un nombre de usuario público y una contraseña de usuario. Usted acepta que nunca divulgará o
+					compartirá el acceso o la información de acceso de su cuenta de usuario con terceros por ningún motivo. Al configurar su
+					cuenta de usuario, se le pedirá que introduzca información opcional adicional (por ejemplo, su año de nacimiento). Usted
+					declara que toda la información que ha proporcionado es exacta y actualizada. Usted se compromete a mantener y
+					actualizar su información para que sea exacta y actualizada.
+				</p>
+				<p>
+					Nos preocupamos por la confidencialidad y seguridad de su información personal. Consulte la <a href="#">Política de
+						privacidad</a> para
+					obtener más información acerca de la recopilación y el uso de datos en este sitio.
+
+				</p>
+				<br>
+				<h3 class="subtitulo">SU DERECHO A USAR CONTENIDO DEL SITIO</h3>
+				<p>
+					Salvo que se indique que sea de dominio público, el contenido de este sitio está protegido por las leyes de derechos de
+					autor. A menos que se indique expresamente lo contrario en el sitio, los textos, los exámenes, los videos, las imágenes
+					y otros materiales didácticos que se proveen con los cursos y programas que se ofrecen son para su uso personal en
+					relación con esos cursos y programas únicamente. Algunos documentos de referencia, libros de texto digitales, artículos
+					y otra información que aparece en este sitio, se utilizan con la autorización de terceros, y el uso de esa información
+					puede estar sujeto a ciertas normas y condiciones, que se publicarán junto con la información. Al usar este sitio usted
+					acepta cumplir con todas las normas y condiciones. Usted se compromete a conservar todos los derechos de autor y otros
+					avisos sobre cualquier contenido que obtenga de este sitio. Todos los derechos sobre el sitio y su contenido, si no se
+					han otorgado expresamente, están reservados.
+				</p>
+				<p>
+					El uso de este sitio, el contenido y los servicios obtenidos a través de este sitio, es bajo su cuenta y riesgo. Su
+					acceso o descarga de información, materiales o datos a través del sitio, usted será el único responsable de cualquier
+					daño a su propiedad (incluido su sistema informático) o pérdida de datos que resulte de la descarga o uso de dicho
+					material o datos, a menos que se encuentre expresamente previsto en la <a href="#">Política de privacidad</a>.
+				</p>
+				<br>
+				<h3 class="subtitulo">RESPONSABILIDAD EN SUS PUBLICACIONES COMO USUARIO</h3>
+				<p>
+					Usted entiende que, al utilizar este sitio, estará expuesto a Publicaciones de usuario de diversas fuentes y que ni este
+					sitio ni los Participantes son responsables de la exactitud, utilidad, fiabilidad o derechos de propiedad intelectual de
+					o relacionados con este tipo de Publicaciones de usuario. Asimismo, entiende y reconoce que puede estar expuesto a
+					Publicaciones de usuario inexactas, ofensivas, difamatorias, indecentes u objetables y acepta renunciar, y por medio del
+					presente renuncia, a cualquier derecho o recurso legal o equitativo que tenga o pueda tener en contra de este sitio o
+					cualquiera de los Participantes con respecto a las mismas. Ni este sitio ni ninguno de los Participantes respalda
+					ninguna Publicación de usuario u opinión, recomendación o consejo expresado en ella. Ni este sitio ni ninguno de los
+					Participantes tienen la obligación de supervisar las Publicaciones de usuario ni ningún otro tipo de comunicaciones de
+					los usuarios a través del sitio.
+				</p>
+				<p>
+					Sin embargo, este sitio se reserva el derecho de revisar las Publicaciones de usuario y ejercer, a su discreción, editar
+					o eliminar, de forma total o parcial, cualquier Publicación de usuario en cualquier momento y por cualquier motivo o
+					permitir que los Participantes lo hagan. Sin perjuicio de lo anterior, al recibir la notificación de un usuario o
+					propietario de un contenido de que una Publicación de usuario supuestamente no cumple con estas Condiciones de servicio,
+					este sitio puede investigar la acusación y determinar a su exclusivo criterio si retirar la Publicación de usuario, lo
+					cual se reserva el derecho de hacer en cualquier momento y sin previo aviso.
+				</p>
+				<br>
+				<h3 class="subtitulo">Servicios de terceros; enlaces a otros sitios web</h3>
+				<p>
+					Este sitio y los cursos individuales que se ofrecen pueden integrarse con servicios de terceros o incluir hipervínculos
+					a sitios web mantenidos o controlados por terceros. Este sitio y los Participantes no son responsables y no evalúan,
+					aprueban, revisan o respaldan de manera rutinaria el contenido o el uso de ninguno de los productos o servicios que
+					puedan ofrecer dichos terceros. Si decide acceder a servicios de terceros o sitios web de terceros, lo hace bajo su
+					propio riesgo.
+				</p>
+				<br>
+				<h3 class="subtitulo">CONDICIONES ADICIONALES</h3>
+				<br>
+				<h3 class="subtitulo">Derechos de rescisión; interrupción de cursos y contenido.</h3>
+				<p>
+					Usted acepta que este sitio, a su exclusivo criterio, puede rescindir su uso o su participación en él, por cualquier
+					motivo o sin motivo, previa notificación a usted. La política consiste en poner fin, cuando proceda, a las cuentas de
+					los usuarios del sitio que infringen reiteradamente los derechos de autor. Este sitio se reservan el derecho, en
+					cualquier momento y a su exclusivo criterio, a cancelar, retrasar, reprogramar o modificar el formato de cualquier curso
+					que se ofrezca a través de él, o a dejar de proporcionar una parte o todo el contenido del sitio o los servicios
+					relacionados, y usted está de acuerdo en que ni este sitio ni ninguno de los Participantes tendrán responsabilidad
+					alguna hacia usted por tal acción. Si ya no desea participar en este sitio, puede cancelar su participación en cualquier
+					momento. Los derechos que se le otorgan en virtud del presente terminarán con la rescisión de su derecho de uso de este
+					sitio, pero las demás disposiciones de los Acuerdos seguirán vigentes luego de dicha rescisión.
+				</p>
+				<br>
+				<h3 class="subtitulo">Fecha de entrada en vigencia:</h3>
+				<br>
+				<p>
+					1 de enero de 2020.
+				</p>
+			</%block>
+		</p>
+    </section>
+</main>

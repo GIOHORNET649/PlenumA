@@ -1,0 +1,51 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Contact")}</%block>
+<style>
+    .texto{
+        float:left;
+        width:30%;
+        padding-right:35px;
+    }
+    .mapa{
+        float:left;
+        width:65%;
+    }
+    .subtitulo{
+        color:#520097;
+    }
+    .titulo{
+        color: #efbc06 !important;
+    }
+</style>
+<main id="main" aria-label="Content" tabindex="-1" style="line-height:2; text-align: justify;">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader"><span class="titulo">${page_header or _("Contact")}</span></%block>
+        </h1>
+<p/>Estamos para apoyarte, recuerda enviar tu mensaje con la captura de pantalla correspondiente que muestre el problema que tengas.</p>
+        <p>
+            ##<%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
+            <%block name="pagecontent">
+                <div class="texto">
+                    ##<h3 class="subtitulo">${_("Office hours:")}</h3>
+                    ##<p>${_("Monday to Friday:")} 09:00 - 18:00 hrs.</p>
+                    ##<br>
+                    ##<h3 class="subtitulo">${_("Phones:")}</h3>
+                    ##<p> 9993410100</p>
+                    ##<br>
+                    <h3 class="subtitulo">${_("Contact Email:")}</h3>
+                    <p><a href="mailto:plenumsoftacademy@gmail.com">plenumsoftacademy@gmail.com</a></p>
+                    <br>
+                    ##<h3 class="subtitulo">${_("Address:")}</h3>
+                    ##<p>Parque científico y tecnológico de Yucatán, carretera Sierra Papacal Km 5.</p>		   
+               </div>
+               ##<div class="mapa">
+               ##    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7442.928475299447!2d-89.78696223828116!3d21.133915630948675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDA4JzAxLjIiTiA4OcKwNDYnNDUuMSJX!5e0!3m2!1ses!2smx!4v1524784665504" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        ##</div>
+            </%block>
+        </p>
+    </section>
+</main>

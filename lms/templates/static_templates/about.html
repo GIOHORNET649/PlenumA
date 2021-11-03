@@ -1,0 +1,38 @@
+<%page expression_filter="h"/>
+<%! 
+    from django.utils.translation import ugettext as _ 
+    from django.core.urlresolvers import reverse
+%>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("About")}</%block>
+
+<style>
+    .subtitulo{
+        color: #520097;
+    }
+    .titulo{
+        color: #efbc06 !important;
+    }
+</style>
+<main id="main" aria-label="Content" tabindex="-1" style="line-height:2; text-align: justify;">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader"><span class="titulo">${page_header or _("About")}</span></%block>
+        </h1>
+	<br>
+        <p>
+            ## <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
+            <%block name="pagecontent">
+			Somos la plataforma de capacitación que permite el acceso masivo a la educación y formación de alta calidad para el Capital Humano. En Plenumsoft Academy encontrarás cursos especializados, disponibles para todo el público y completamente en línea. Puedes acceder a nuestros cursos en el momento y lugar donde te encuentres, en cualquier momento del día en el que dispongas de tiempo para dedicarle a realizar las actividades; lo único que necesitas es un dispositivo (computadora, tableta o Smartphone) y conexión a internet.
+	    </%block>
+        </p>
+        <br>
+        <p>Adicionalmente, en nuestros cursos tendrás materiales disponibles para descargar, y así apoyar tu aprendizaje.</p>
+	<br>
+	<p>En Plenumsoft Academy todos las actividades y evaluaciones son automatizadas, por lo que podrás realizarlas una vez que estés listo y recibirás retroalimentación inmediata. Además, puedes darle seguimiento a tus avances y al finalizar, tienes la opción de solicitar tu certificado.  Asimismo, la plataforma cuenta con diversos canales de comunicación con instructores y con otros compañeros del curso.</p>
+	<br>
+	<p>Finalmente queremos decirte que en Plenumsoft Academy nos mantenemos en constante actualización para ofrecerte los mejores contenidos de acuerdo a los requerimientos de la sociedad y los modelos de formación vigentes en el medio.</p>
+	
+    </section>
+</main>
